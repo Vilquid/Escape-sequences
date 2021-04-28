@@ -1,0 +1,15 @@
+# English - Limites de la norme POSIX
+
+POSIX does not define any standard way of literally denoting characters by their numeric code in character sets longer than 8 bits (eg Unicode). Also, many Unicode or ISO/IEC 10646 compatible POSIX implementations also accept the sequences \uNNNN (where NNNN designates on 4 hexadecimal digits the Unicode code point of a character in the basic multilingual plan) or \UNNNNNNNN (where NNNNNNNNN designates on 8 hexadecimal digits the Unicode code point of any character in the set).
+
+The standard also does not specify whether the characters designated by a hexadecimal code refer to those in the source file, or whether their code produces a transcoding of the input coded character set to a common set (such as Unicode). Unicode or the ASCII base set is almost always used as the internal encoding, but this is not always true on systems encoding EBCDIC based with POSIX regular expressions.
+
+In addition, the 8-bit character sets may differ when extended, particularly in the upper area (non-ASCII) and the interpretation of control characters (depending on the system used). This is an interoperability issue, which is most commonly resolved by using, in word processing utilities, a single, Unicode-based common internal character set and transcoding of the input character set to that common internal encoding. : With this system, regular expressions can become independent of coded character sets used in different documents.
+
+# Français - Limites de la norme POSIX
+
+POSIX ne définit aucune façon standard de désigner littéralement des caractères par leur code numérique dans des jeux de caractères à plus de 8 bits (par exemple Unicode). Aussi, nombre d’implémentations de POSIX compatibles Unicode ou ISO/CEI 10646 acceptent aussi les séquences \uNNNN (où NNNN désigne sur 4 chiffres hexadécimaux le point de code Unicode d’un caractère du plan multingue de base) ou \UNNNNNNNN (où NNNNNNNN désigne sur 8 chiffres hexadécimaux le point de code Unicode d’un caractère quelconque du jeu).
+
+La norme ne précise pas non plus si les caractères désignés par un code hexadécimal désignent ceux du fichier source, ou si leur code résulte d’un transcodage du jeu de caractères codés d’entrée vers un jeu commun (tel qu’Unicode). Unicode ou le jeu de base ASCII est presque toujours utilisé en tant que codage interne, mais ce n’est pas toujours vrai sur les systèmes à codage basé sur EBCDIC avec les expressions rationnelles POSIX.
+
+De plus, les jeux de caractères sur 8 bits peuvent différer largement notamment dans la zone haute (non-ASCII) et l’interprétation des caractères de contrôle (en fonction du système utilisé). Cela constitue un problème d’interopérabilité, qui est résolu le plus souvent en utilisant, dans les utilitaires de traitement de texte, un jeu de caractère interne commun unique basé sur Unicode et un transcodage du jeu de caractères d’entrée vers ce codage interne commun : avec ce système, les expressions rationnelles peuvent devenir indépendantes des jeux de caractères codés utilisés dans différents documents.
