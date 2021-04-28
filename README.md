@@ -1,4 +1,4 @@
-# English - Limites de la norme POSIX
+# English - Limits of POSIX norm
 
 POSIX does not define any standard way of literally denoting characters by their numeric code in character sets longer than 8 bits (eg Unicode). Also, many Unicode or ISO/IEC 10646 compatible POSIX implementations also accept the sequences \uNNNN (where NNNN designates on 4 hexadecimal digits the Unicode code point of a character in the basic multilingual plan) or \UNNNNNNNN (where NNNNNNNNN designates on 8 hexadecimal digits the Unicode code point of any character in the set).
 
